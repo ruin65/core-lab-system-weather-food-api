@@ -1,0 +1,94 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    background-image: url('1.png'); 
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#plateimage {
+    max-width: 40%;
+    height: auto;
+    display: block; /* 显示图片 */
+    margin: 0 auto; /* 居中显示 */
+    text-align: center;
+    z-index: 1; /* 确保图片在下层 */
+    transform: translateY(-80px);
+}
+
+
+.weather-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFDF9;
+    padding: 30px 50px; /* 上下边距设置为 40px, 左右边距设置为 30px */
+    border-style: solid;
+    border-width: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.weather-container h1 {
+    font-size: 33px;
+    font-weight: bolder;
+    margin-top: 0%;
+}
+
+.weather-container input[type="text"] {
+    border: solid;
+    border-width: 3px;
+    padding: 10px;
+    margin-right: 10px;
+    outline: none;
+    width: 55%; /* 增加宽度 */
+}
+
+.weather-container button {
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    width: 25%; /* 增加宽度 */
+}
+
+.weather-container button:hover {
+    background: #555;
+}
+
+
+
+.weather-container {
+    text-align: center; /* 这将使容器内的所有元素居中 */
+}
+
+.weather-info h2, #recipeResult h3{
+    display: inline-block; /* 使 div 行为像文本一样，以便居中 */
+    margin: 10px auto; /* 水平居中 */
+    font-weight: bold;
+    font-size: 25px;
+   
+}
+
+#recipeResult h4{
+    margin-top: 10px;
+    font-weight: bolder;  
+    text-align: center;
+    z-index: 2; /* 确保文本在上层 */
+    transform: translateY(5px);
+    font-size: 20px;
+}
+
+#recipeResult p{
+    margin-top: 10px;
+    font-size: 15px;
+    transform: translateY(10px);
+    margin-bottom: -5%;
+}
